@@ -1,0 +1,52 @@
+<!--This is the Form Page.-->
+<!--Now for the Success Page.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <!--Changing the tab title, but first -> Let check this out first.-->
+    <!--Okay cool, let's check out how it is supposed to look. -->
+    <!--That part is done.-->
+    <title>Subscribe to Newsletter</title>
+
+</head>
+<body>
+    <!--Creating the div that will hold everything. You can do this part however you want though.-->
+    <!--I will be adding the classes as well, so later when I do the CSS, I will be 
+    able to target whatever item I want. For now, just HTML.-->
+    <div class="container">
+        <!--One way that I add an image is with CSS. Like this. -->
+        <div class="header-image"></div>
+
+        <div class="content">
+            <h1 class="title">Stay updated!</h1>
+            <p class="description">
+                Join 60,000+ product managers receiving monthly <br class="descriptionBr"> updates on:
+                <!--The '<br>' tag helps to add a break. So the words afterwards ended up on the next line.-->
+            </p>
+
+            <!--The 'ul' tag is being used because it is an unordered bulleted list.-->
+            <ul class="features">
+                <!--The 'li' tag means the item is a list.-->
+                <!--Now I will add images below.-->
+                <li><img src="./assets/group.svg" alt="">Product discover and building what matters.</li>
+                <li><img src="./assets/group-2.svg" alt="">Measuring to ensure updates are a success.</li>
+                <li><img src="./assets/group-3.svg" alt="">And much more!</li>
+            </ul>
+        </div>
+        <!--Now for the form section. Input part.-->
+        <form class="email-signup" id="email-signup">
+            <p class="emailDiv"><span class="email-label">Email address</span><span class="hidden" id="validEmailAddress">Valid email required</span></p>
+            <div class="email-input" id="email-input">
+                <input type="email" id="email" value="" class="inputClass">
+            </div>
+
+            <!--Now for the button.-->
+            <button class="subscribe-button" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+    </div>    
+</body>
+</html>

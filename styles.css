@@ -1,0 +1,16 @@
+/*This file is named styles.css*/
+/* I will only be adding this image through here on this video, but
+the rest of the CSS part will be in the next video. */
+
+/*I add a dot in front of the name as a way to target the div's class name with that 
+name.*/
+/*I have already added the image to the folder as well to use here.*/
+.header-image{
+    
+    background-image: url(./assets/frame-8.svg);
+    height: 281px;
+    width: 375px;
+
+
+
+}
