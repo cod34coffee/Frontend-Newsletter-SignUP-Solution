@@ -1,0 +1,167 @@
+/*This is the css for the success page..*/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSuccess{
+    width: 375px;
+    height: 812px;
+    background: white;
+    border-radius: 5px;
+    text-align: start;
+    padding-left: 15px;
+    padding-top: 120px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+.icon{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #2c2c54;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.description{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2c2c54;
+    margin: 20px 0 40px;
+    line-height: 24px;
+}
+.dismiss-button{
+    background: #2c2c54;
+    border: none;
+    padding: 17px 94px;
+    border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    width: 95%;
+    margin-top: 270px;
+    color: white;
+
+}
+.dismiss-button:hover{
+    background: linear-gradient(90deg, rgba(255,84,120,1) 0%, rgb(255,105,62,1)100%);
+    border: none;
+    padding: 17px 94px;
+    border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    width: 95%;
+    box-shadow: 0 7px 20px #FF576F;
+}
+.break2{
+    display: none;
+}
+
+@media(min-width:1440px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: white;
+    }
+    .containerSuccess{
+        width: 504px;
+        height: 522px;
+        background: white;
+        border-radius: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+        text-align: start;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+    .icon{
+        width: 64px;
+        height: 64px;
+        margin-bottom: 20px;
+    }
+    .title{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 46px;
+        color: black;
+        margin: 0;
+        line-height: 57px;
+    }
+    .description{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        color: #6c6c75;
+        margin: 30px 0 40px;
+        line-height: 24px;
+    }
+    .dismiss-button{
+        background: #2c2c54;
+        color: white;
+        border: none;
+        padding: 17px 94px;
+        border-radius: 7px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 17px;
+        cursor: pointer;
+        margin-top: 0px;
+    }
+    .dismiss-button:hover{
+        background: linear-gradient(90deg, rgba(255,84,120,1) 0%, rgba(255,105,62,1) 100%);
+        box-shadow: 0 7px 20px #FF576F;
+        font-size: 17px;
+        font-weight: 800;
+
+    }
+    .break{
+        display: none;
+
+    }
+    .break2{
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
