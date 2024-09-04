@@ -1,226 +1,229 @@
-/*This file is named styles.css*/
-/* This css file is for the sign-up page.*/
+
+/* This file is named styles.css */
+/* This CSS file is for the sign-up page. */
 
 body, html{
-    padding: 15px, 15px;
-    font-family: 'Roboto', sans-serif;
-    background: white;
-    align-content: center;
-    justify-content: center;
-    display: flex;
+    padding: 15px, 15px; /* Adds padding to the entire page. */
+    font-family: 'Roboto', sans-serif; /* Sets the font for the text to 'Roboto'. */
+    background: white; /* Sets the initial background color to white. */
+    align-content: center; /* Centers content vertically within a flex container. */
+    justify-content: center; /* Centers content horizontally within a flex container. */
+    display: flex; /* Enables flexbox layout for the body and html. */
     /*You don't have to do this.*/
-    background-color: rgb(4, 4, 70);
+    background-color: rgb(4, 4, 70); /* Sets the background color to a dark shade of blue. */
 }
 
 .container{
-    width: 375px;
-    padding-bottom: 40px;
-    background: white;
-    border-radius: 5px;
+    width: 375px; /* Sets the width of the container. */
+    padding-bottom: 40px; /* Adds padding to the bottom of the container. */
+    background: white; /* Sets the background color to white. */
+    border-radius: 5px; /* Rounds the corners of the container. */
 }
-
-
-
-
 
 .header-image{
-    
-    background-image: url(./assets/frame-8.svg);
-    height: 281px;
-    width: 375px;
-
-
-
+    background-image: url(./assets/Frame\ 8.png); /* Sets a background image. */
+    height: 281px; /* Sets the height of the header image container. */
+    width: 375px; /* Sets the width of the header image container. */
+    border-radius: 0% 0% 7% 7%; /* Rounds the bottom corners of the header image container. */
 }
 
-
 .content{
-    padding: 0 25px;
-    margin-bottom: 25px;
-
+    padding: 0 25px; /* Adds padding to the left and right of the content. */
+    margin-bottom: 25px; /* Adds margin to the bottom of the content. */
 }
 
 .title{
-    font-size: 40px;
-    font-weight: 700;
-    color: #000000;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    font-size: 40px; /* Sets the font size for the title. */
+    font-weight: 700; /* Makes the title bold. */
+    color: #000000; /* Sets the color of the title to black. */
+    margin-top: 32px; /* Adds margin to the top of the title. */
+    margin-bottom: 32px; /* Adds margin to the bottom of the title. */
 }
+
 .description{
-    font-size: 16px;
-    line-height: 23px;
-    color: #878a93;
-    margin-bottom: 25px;
-    font-weight: bold;
+    font-size: 16px; /* Sets the font size for the description. */
+    line-height: 23px; /* Sets the line height (spacing between lines) for the description. */
+    color: #878a93; /* Sets the color of the description text. */
+    margin-bottom: 25px; /* Adds margin to the bottom of the description. */
+    font-weight: bold; /* Makes the description text bold. */
 }
 
 .descriptionBr{
-    display: none;
+    display: none; /* Hides the line break by default. */
 }
 
-
 .features{
-    list-style: none;
-    padding: 0;
-    margin: 15px 0;
+    list-style: none; /* Removes the default bullet points from the list. */
+    padding: 0; /* Removes default padding from the list. */
+    margin: 15px 0; /* Adds margin to the top and bottom of the list. */
 }
 
 .features li{
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 23px;
-    color: #878a93;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: start;
+    font-size: 16px; /* Sets the font size for the list items. */
+    font-weight: bold; /* Makes the list items bold. */
+    line-height: 23px; /* Sets the line height for the list items. */
+    color: #878a93; /* Sets the color of the list items. */
+    margin-bottom: 15px; /* Adds margin to the bottom of each list item. */
+    display: flex; /* Displays the list items as flex containers. */
+    align-items: start; /* Aligns items at the start of the flex container. */
 }
 
 .features li img{
-    margin-right: 16px;
-    margin-bottom: 20px;
+    margin-right: 16px; /* Adds margin to the right of the images in the list items. */
+    margin-bottom: 20px; /* Adds margin to the bottom of the images in the list items. */
 }
 
 .email-signup{
-    padding: 0 23.5px;
+    padding: 0 23.5px; /* Adds padding to the left and right of the email signup form. */
 }
 
 .emailDiv{
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Displays the email label and validation message as flex containers. */
+    justify-content: space-between; /* Spaces the items out evenly. */
 }
 
 .email-label{
-    font-size: 12px;
-    color: #1a1a24;
-    font-weight: bolder;
+    font-size: 12px; /* Sets the font size for the email label. */
+    color: #1a1a24; /* Sets the color of the email label. */
+    font-weight: bolder; /* Makes the email label text bolder. */
 }
 
 .email-input{
-    margin-bottom: 25px;
+    margin-bottom: 25px; /* Adds margin to the bottom of the email input field. */
 }
 
 .inputClass{
-    border: 1px solid #979797;
-    border-radius: 7px;
-    width: 83%;
-    font-size: 16px;
-    line-height: 23px;
-    padding: 16px 25px;
-    color: #000000;
+    border: 1px solid #979797; /* Sets the border, color, and width for the input field. */
+    border-radius: 7px; /* Rounds the corners of the input field. */
+    width: 83%; /* Sets the width of the input field. */
+    font-size: 16px; /* Sets the font size for the input text. */
+    line-height: 23px; /* Sets the line height for the input text. */
+    padding: 16px 25px; /* Adds padding inside the input field. */
+    color: #000000; /* Sets the text color inside the input field. */
 }
 
 .valid{
-    border: 2px solid rgb(122,216,122);
-    border-radius: 7px;
-    width: 83%;
-    font-size: 16px;
-    background-color: rgb(181,226,181);
-    padding: 16px 25px;
-    color: rgb(122, 216, 122);
+    border: 2px solid rgb(122,216,122); /* Sets the border, color, and width for a valid input field. */
+    border-radius: 7px; /* Rounds the corners of the valid input field. */
+    width: 83%; /* Sets the width of the valid input field. */
+    font-size: 16px; /* Sets the font size for the valid input text. */
+    background-color: rgb(181,226,181); /* Sets the background color for a valid input field. */
+    padding: 16px 25px; /* Adds padding inside the valid input field. */
+    color: rgb(122, 216, 122); /* Sets the text color inside the valid input field. */
 }
 
 .valid::placeholder{
-    color: rgb(122, 216, 122);
-
+    color: rgb(122, 216, 122); /* Sets the placeholder text color for a valid input field. */
 }
 
 .invalid::placeholder{
-    color: #BE7F7A;
+    color: #BE7F7A; /* Sets the placeholder text color for an invalid input field. */
 }
 
 .invalid{
-    border: 2px solid #BE7F7A;
-    border-radius: 7px;
-    width: 835;
-    font-size: 16px;
-    background-color: #FFE8E6;
-    padding: 16px 25px;
-    color: #BE7F7A;
+    border: 2px solid #BE7F7A; /* Sets the border, color, and width for an invalid input field. */
+    border-radius: 7px; /* Rounds the corners of the invalid input field. */
+    width: 83%; /* Sets the width of the invalid input field. */
+    font-size: 16px; /* Sets the font size for the invalid input text. */
+    background-color: #FFE8E6; /* Sets the background color for an invalid input field. */
+    padding: 16px 25px; /* Adds padding inside the invalid input field. */
+    color: #BE7F7A; /* Sets the text color inside the invalid input field. */
 }
 
 .validEmailAddress{
-    font-size: 12px;
-    display: block;
-    color: #BE7F7A;
-    font-weight: bold;
+    font-size: 12px; /* Sets the font size for the validation message. */
+    display: block; /* Displays the validation message as a block element. */
+    color: #BE7F7A; /* Sets the color of the validation message text. */
+    font-weight: bold; /* Makes the validation message text bold. */
 }
 
 .hidden{
-    display: none;
+    display: none; /* Hides the element when the 'hidden' class is applied. */
 }
 
 .subscribe-button{
-    background-color: #000000;
-    color: #FFFFFF;
-    text-align: center;
-    border: none;
-    border-radius: 7px;
-    width: 98.5%;
-    height: 56px;
-    font-size: 16px;
-    line-height: 23px;
-    padding: 16px 25px;
-    cursor: pointer;
+    background-color: #2c2c54; /* Sets the background color of the subscribe button. */
+    color: #FFFFFF; /* Sets the text color of the subscribe button to white. */
+    text-align: center; /* Centers the text inside the button. */
+    border: none; /* Removes the border around the button. */
+    border-radius: 7px; /* Rounds the corners of the button. */
+    width: 98.5%; /* Sets the width of the button. */
+    height: 56px; /* Sets the height of the button. */
+    font-size: 16px; /* Sets the font size for the button text. */
+    line-height: 23px; /* Sets the line height for the button text. */
+    padding: 16px 25px; /* Adds padding inside the button. */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button. */
 }
 
 .subscribe-button:hover{
-    background: linear-gradient(90deg, rgba(255,84,120,1)0%, rgba(255,105,62,1)100%);
-
-    color: white;
-    box-shadow: 0 7px 20px #FF576F;
-    cursor: pointer;
+    background: linear-gradient(90deg, rgba(255,84,120,1) 0%, rgba(255,105,62,1) 100%); 
+    /* Changes the background to a gradient when the button is hovered over. */
+    color: white; /* Sets the text color to white on hover. */
+    box-shadow: 0 7px 20px #FF576F; /* Adds a shadow effect to the button on hover. */
+    cursor: pointer; /* Keeps the pointer cursor on hover. */
 }
 
-@media(min-width: 1440px){
+@media(min-width: 1440px){ /* Media query for screens wider than 1440px. */
     body,html{
-        padding: 45px;
+        padding: 45px; /* Increases the padding on larger screens. */
     }
 
     .title{
-        font-size: 60px;
+        font-size: 60px; /* Increases the font size of the title on larger screens. */
     }
-    .descriptionBr{
-        display: block;
-    }
-    .container{
-        width: 930px;
-        height: 650px;
-        background-color: white;
-        padding-left: 70px;
-        padding-right: 25px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        border-radius: 40px;
-    }
-    .header-image{
-        float: right;
-        background-image: url(./assets/illustration-sign-up-mobile\ 1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 647px;
-        border-radius: 15px;
 
+    .descriptionBr{
+        display: block; /* Shows the line break on larger screens. */
     }
+
+    
+    .container{
+        width: 930px; /* Sets the width of the container to 930px for larger screens. */
+        height: 650px; /* Sets the height of the container to 650px for larger screens. */
+        background-color: white; /* Sets the background color of the container to white. */
+        padding-left: 70px; /* Adds 70px of padding to the left side of the container. */
+        padding-right: 25px; /* Adds 25px of padding to the right side of the container. */
+        padding-top: 25px; /* Adds 25px of padding to the top of the container. */
+        padding-bottom: 25px; /* Adds 25px of padding to the bottom of the container. */
+        border-radius: 40px; /* Rounds the corners of the container by 40px. */
+    }
+
+    .header-image{
+        float: right; /* Positions the header image to the right of the container. */
+        background-image: url(./assets/illustration-sign-up-mobile\ 1.png); /* Sets the background image. */
+        background-repeat: no-repeat; /* Prevents the background image from repeating. */
+        background-size: cover; /* Scales the background image to cover the entire area. */
+        background-position: center; /* Centers the background image within the container. */
+        height: 647px; /* Sets the height of the header image container to 647px. */
+        border-radius: 15px; /* Rounds the corners of the header image container by 15px. */
+    }
+
     .content, .features, .email-signup{
-        float: left;
+        float: left; /* Positions the content, features, and email signup to the left side of the container. */
     }
+
     .features{
-        margin-bottom: -20px;
+        margin-bottom: -20px; /* Adds a negative margin to the bottom of the features section to reduce spacing. */
     }
+
     .features li{
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 18px; /* Increases the font size of the list items in the features section to 18px. */
+        font-weight: bold; /* Makes the list items in the features section bold. */
     }
+
     .subscribe-button{
-        width: 94%;
+        width: 94%; /* Sets the width of the subscribe button to 94% of the container width. */
     }
+
     .email-signup{
-        width: 50%;
-        margin-bottom: 500px;
+        width: 50%; /* Sets the width of the email signup form to 50% of the container width. */
+        margin-bottom: 500px; /* Adds 500px of margin to the bottom of the email signup form. */
     }
+
     .emailDiv{
-        width: 95%;
+        width: 95%; /* Sets the width of the email division (wrapper for label and input) to 95% of the container width. */
     }
+
 }
+
+

@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./success.css">
-    <title>Thanks for Subscribing</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./success.css"> 
+    <title>Thanks for Subscribing</title> 
 </head>
 <body>
     <div class="containerSuccess">
-        <img src="assets/group.svg" alt="" class="icon">
-        <h1 class="title">Thanks for subscribing!</h1>
-        <p class="description">A confirmation email has been sent to ash@loremcompany.com. Please open it and <br class="break">click <br class="break2"> the button inside to confirm your <br class="break">subscription.</p>
+        <!-- Displays a checkmark icon to indicate successful subscription. -->
+        <img src="assets/checkimg.svg" alt="" class="icon"> 
 
-        <a href="./index.html" style="text-decoration: none; color: white;"><button class="dismiss-button">Dismiss message</button></a>
+        <!-- Heading to thank the user for subscribing. -->
+        <h1 class="title">Thanks for subscribing!</h1> 
+
+        <!-- Description text with a span for dynamic email display using JavaScript. -->
+        <p class="description">
+            A confirmation email has been sent to 
+            <span id="userEmail"></span>. <!-- The email entered by the user will be dynamically inserted here by JavaScript. -->
+            Please open it and <br class="break">click <br class="break2"> the button inside to confirm your <br class="break">subscription.
+        </p>
+
+        <!-- Button to dismiss the message, linking back to the index.html page. -->
+        <a href="./index.html" style="text-decoration: none; color: white;">
+            <button class="dismiss-button">Dismiss message</button>
+        </a>
     </div>
+
+    <!-- Links to the external JavaScript file to handle dynamic behavior (e.g., displaying the user's email). -->
+    <script src="./success.js"></script>
 </body>
 </html>

@@ -1,167 +1,138 @@
-/*This is the css for the success page..*/
-
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; 
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
 }
 
 .containerSuccess{
-    width: 375px;
-    height: 812px;
-    background: white;
-    border-radius: 5px;
-    text-align: start;
-    padding-left: 15px;
-    padding-top: 120px;
-    box-sizing: border-box;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    width: 375px; /* Sets the width of the success container to 375px. */
+    height: 812px; /* Sets the height of the success container to 812px. */
+    background: white; /* Sets the background color of the container to white. */
+    border-radius: 5px; /* Rounds the corners of the container by 5px. */
+    text-align: start; /* Aligns text to the start (left) inside the container. */
+    padding-left: 15px; /* Adds 15px padding to the left side of the container. */
+    padding-top: 120px; /* Adds 120px padding to the top of the container. */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height. */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10); /* Adds a subtle shadow below the container. */
 }
 
 .icon{
-    width: 64px;
-    height: 64px;
-    margin-bottom: 20px;
+    width: 64px; /* Sets the width of the icon image to 64px. */
+    height: 64px; /* Sets the height of the icon image to 64px. */
+    margin-bottom: 20px; /* Adds 20px of margin below the icon. */
 }
 
 .title{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 36px;
-    color: #2c2c54;
-    margin: 0;
-    line-height: 1.2;
+    font-family: 'Roboto', sans-serif; /* Sets the font family for the title text. */
+    font-weight: 600; /* Sets the font weight to 600 (semi-bold). */
+    font-size: 36px; /* Sets the font size of the title text to 36px. */
+    color: #2c2c54; /* Sets the color of the title text to a dark purple. */
+    margin: 0; /* Removes default margin from the title. */
+    line-height: 1.2; /* Sets the line height to 1.2 times the font size. */
 }
 
 .description{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #2c2c54;
-    margin: 20px 0 40px;
-    line-height: 24px;
+    font-family: 'Roboto', sans-serif; /* Sets the font family for the description text. */
+    font-weight: 400; /* Sets the font weight to 400 (regular). */
+    font-size: 16px; /* Sets the font size of the description text to 16px. */
+    color: #2c2c54; /* Sets the color of the description text to a dark purple. */
+    margin: 20px 0 40px; /* Adds 20px of margin above and 40px below the description. */
+    line-height: 24px; /* Sets the line height to 24px, creating space between lines of text. */
 }
-.dismiss-button{
-    background: #2c2c54;
-    border: none;
-    padding: 17px 94px;
-    border-radius: 7px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    width: 95%;
-    margin-top: 270px;
-    color: white;
 
+.dismiss-button{
+    background: #2c2c54; /* Sets the background color of the button to dark purple. */
+    border: none; /* Removes any border from the button. */
+    padding: 17px 94px; /* Adds 17px padding vertically and 94px horizontally inside the button. */
+    border-radius: 7px; /* Rounds the corners of the button by 7px. */
+    font-family: 'Roboto', sans-serif; /* Sets the font family for the button text. */
+    font-weight: 600; /* Sets the font weight of the button text to 600 (semi-bold). */
+    font-size: 14px; /* Sets the font size of the button text to 14px. */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button. */
+    width: 95%; /* Sets the button's width to 95% of its container. */
+    margin-top: 270px; /* Adds 270px of margin above the button. */
+    color: white; /* Sets the text color of the button to white. */
 }
+
 .dismiss-button:hover{
-    background: linear-gradient(90deg, rgba(255,84,120,1) 0%, rgb(255,105,62,1)100%);
-    border: none;
-    padding: 17px 94px;
-    border-radius: 7px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    width: 95%;
-    box-shadow: 0 7px 20px #FF576F;
+    background: linear-gradient(90deg, rgba(255,84,120,1) 0%, rgb(255,105,62,1) 100%); /* Adds a gradient background on hover. */
+    border: none; /* Removes any border from the button on hover. */
+    padding: 17px 94px; /* Ensures padding remains the same on hover. */
+    border-radius: 7px; /* Keeps the button's corners rounded on hover. */
+    font-family: 'Roboto', sans-serif; /* Keeps the font family the same on hover. */
+    font-weight: 600; /* Keeps the font weight the same on hover. */
+    font-size: 14px; /* Keeps the font size the same on hover. */
+    cursor: pointer; /* Keeps the cursor as a pointer on hover. */
+    width: 95%; /* Keeps the button's width the same on hover. */
+    box-shadow: 0 7px 20px #FF576F; /* Adds a box shadow to the button on hover. */
 }
+
 .break2{
-    display: none;
+    display: none; /* Hides this element by default. */
 }
 
 @media(min-width:1440px){
     body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background: white;
+        display: flex; /* Keeps the flexbox layout for larger screens. */
+        justify-content: center; /* Centers content horizontally. */
+        align-items: center; /* Centers content vertically. */
+        height: 100vh; /* Sets the height of the body to fill the viewport. */
+        margin: 0; /* Removes default margin from the body. */
+        background: white; /* Sets the background color to white. */
     }
     .containerSuccess{
-        width: 504px;
-        height: 522px;
-        background: white;
-        border-radius: 40px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
-        text-align: start;
-        padding: 40px;
-        box-sizing: border-box;
+        width: 504px; /* Increases the width of the container for larger screens. */
+        height: 522px; /* Decreases the height of the container for larger screens. */
+        background: white; /* Keeps the background color white. */
+        border-radius: 40px; /* Increases the corner radius for a more rounded look. */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10); /* Keeps the shadow effect. */
+        text-align: start; /* Keeps the text alignment to the start (left). */
+        padding: 40px; /* Increases the padding inside the container for larger screens. */
+        box-sizing: border-box; /* Ensures padding and borders are included in the container's width and height. */
     }
     .icon{
-        width: 64px;
-        height: 64px;
-        margin-bottom: 20px;
+        width: 64px; /* Keeps the icon size the same. */
+        height: 64px; /* Keeps the icon size the same. */
+        margin-bottom: 20px; /* Keeps the margin below the icon the same. */
     }
     .title{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 600;
-        font-size: 46px;
-        color: black;
-        margin: 0;
-        line-height: 57px;
+        font-family: 'Roboto', sans-serif; /* Keeps the font family the same. */
+        font-weight: 600; /* Keeps the font weight the same. */
+        font-size: 46px; /* Increases the font size of the title for larger screens. */
+        color: black; /* Changes the color of the title to black. */
+        margin: 0; /* Keeps the margin the same. */
+        line-height: 57px; /* Increases the line height for better spacing between lines of text. */
     }
     .description{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 600;
-        font-size: 15px;
-        color: #6c6c75;
-        margin: 30px 0 40px;
-        line-height: 24px;
+        font-family: 'Roboto', sans-serif; /* Keeps the font family the same. */
+        font-weight: 600; /* Increases the font weight to 600 (semi-bold) for larger screens. */
+        font-size: 15px; /* Decreases the font size slightly for larger screens. */
+        color: #6c6c75; /* Changes the text color to a lighter gray. */
+        margin: 30px 0 40px; /* Adjusts the margin above to 30px and keeps the 40px margin below. */
+        line-height: 24px; /* Keeps the line height the same for consistency. */
     }
     .dismiss-button{
-        background: #2c2c54;
-        color: white;
-        border: none;
-        padding: 17px 94px;
-        border-radius: 7px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 800;
-        font-size: 17px;
-        cursor: pointer;
-        margin-top: 0px;
+        background: #2c2c54; /* Keeps the background color the same. */
+        color: white; /* Keeps the text color white. */
+        border: none; /* Keeps the button borderless. */
+        padding: 17px 94px; /* Keeps the same padding. */
+        border-radius: 7px; /* Keeps the corners rounded. */
+        font-family: 'Roboto', sans-serif; /* Keeps the font family the same. */
+        font-weight: 800; /* Increases the font weight to 800 (bold). */
+        font-size: 17px; /* Increases the font size to 17px for larger screens. */
+        cursor: pointer; /* Keeps the cursor as a pointer. */
+        margin-top: 0px; /* Removes the margin above the button. */
     }
     .dismiss-button:hover{
-        background: linear-gradient(90deg, rgba(255,84,120,1) 0%, rgba(255,105,62,1) 100%);
-        box-shadow: 0 7px 20px #FF576F;
-        font-size: 17px;
-        font-weight: 800;
-
+        background: linear-gradient(90deg, rgba(255,84,120,1) 0%, rgba(255,105,62,1) 100%); /* Keeps the gradient background on hover. */
+        box-shadow: 0 7px 20px #FF576F; /* Keeps the box shadow on hover. */
+        font-size: 17px; /* Keeps the font size the same on hover. */
+        font-weight: 800; /* Keeps the font weight the same on hover. */
     }
     .break{
-        display: none;
-
+        display: none; /* Hides this element. */
     }
     .break2{
-        display: block;
+        display: block; /* Displays this element on larger screens. */
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -1,52 +1,49 @@
-<!--This is the Form Page.-->
-<!--Now for the Success Page.-->
-
-<!DOCTYPE html>
-<html lang="en">
+<!-- This is the Form Page. -->
+<!DOCTYPE html> 
+<html lang="en"> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <!--Changing the tab title, but first -> Let check this out first.-->
-    <!--Okay cool, let's check out how it is supposed to look. -->
-    <!--That part is done.-->
-    <title>Subscribe to Newsletter</title>
-
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./styles.css"> <!-- Links to an external CSS file for styling. -->
+    <title>Subscribe to Newsletter</title> <!-- The title of the webpage, shown in the browser tab. -->
 </head>
 <body>
-    <!--Creating the div that will hold everything. You can do this part however you want though.-->
-    <!--I will be adding the classes as well, so later when I do the CSS, I will be 
-    able to target whatever item I want. For now, just HTML.-->
-    <div class="container">
-        <!--One way that I add an image is with CSS. Like this. -->
-        <div class="header-image"></div>
+    
+    <div class="container"> <!-- A container that holds the entire content of the page. -->
+   
+        <div class="header-image"></div> <!-- An empty div for the header image, styled in CSS with a background image. -->
 
-        <div class="content">
-            <h1 class="title">Stay updated!</h1>
+        <div class="content"> <!-- This div contains the main content of the page. -->
+            <h1 class="title">Stay updated!</h1> <!-- The main heading of the page, styled with the 'title' class. -->
             <p class="description">
                 Join 60,000+ product managers receiving monthly <br class="descriptionBr"> updates on:
-                <!--The '<br>' tag helps to add a break. So the words afterwards ended up on the next line.-->
+                <!-- The '<br>' tag creates a line break, moving the text after it to the next line. -->
             </p>
 
-            <!--The 'ul' tag is being used because it is an unordered bulleted list.-->
-            <ul class="features">
-                <!--The 'li' tag means the item is a list.-->
-                <!--Now I will add images below.-->
-                <li><img src="./assets/group.svg" alt="">Product discover and building what matters.</li>
-                <li><img src="./assets/group-2.svg" alt="">Measuring to ensure updates are a success.</li>
-                <li><img src="./assets/group-3.svg" alt="">And much more!</li>
+            <ul class="features"> <!-- An unordered list to display the features of the newsletter. -->
+                <li><img src="./assets/checkimg.svg" alt="">Product discovery and building what matters.</li>
+                <!-- Each 'li' represents a list item, and the 'img' tag embeds an image in the list. -->
+                <li><img src="./assets/checkimg.svg" alt="">Measuring to ensure updates are a success.</li>
+                <li><img src="./assets/checkimg.svg" alt="">And much more!</li>
             </ul>
         </div>
-        <!--Now for the form section. Input part.-->
-        <form class="email-signup" id="email-signup">
-            <p class="emailDiv"><span class="email-label">Email address</span><span class="hidden" id="validEmailAddress">Valid email required</span></p>
-            <div class="email-input" id="email-input">
-                <input type="email" id="email" value="" class="inputClass">
+
+        <form class="email-signup" id="email-signup"> <!-- A form for users to enter their email addresses. -->
+            <p class="emailDiv">
+                <span class="email-label">Email address</span>
+                <span class="hidden" id="validEmailAddress">Valid email required</span>
+                <!-- A span element for displaying a validation message, hidden by default. -->
+            </p>
+            <div class="email-input" id="email-input"> <!-- A div wrapping the email input field. -->
+                <input type="email" id="email" value="" class="inputClass" placeholder="ash#loremcompany.com">
+                <!-- The input field for the user's email address, styled with the 'inputClass'. -->
             </div>
 
-            <!--Now for the button.-->
             <button class="subscribe-button" type="submit">Subscribe to monthly newsletter</button>
+            <!-- A button to submit the form and subscribe to the newsletter. -->
         </form>
     </div>    
+    
+    <script src="./index.js"></script> <!-- Links to an external JavaScript file for additional functionality. -->
 </body>
 </html>
