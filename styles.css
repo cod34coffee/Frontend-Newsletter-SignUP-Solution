@@ -163,7 +163,7 @@ body, html{
     cursor: pointer; /* Keeps the pointer cursor on hover. */
 }
 
-@media(min-width: 1440px){ /* Media query for screens wider than 1440px. */
+@media(min-width: 1140px){ /* Media query for screens wider than 1440px. */
     body,html{
         padding: 45px; /* Increases the padding on larger screens. */
     }
