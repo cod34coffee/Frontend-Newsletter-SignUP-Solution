@@ -22,14 +22,14 @@ async function validateEmail(email, apiKey) {
 
             /*
             If you want to see the API response in the console (for debugging),
-            you can comment out the redirection below so you don't leave the current page.
+            you can comment out the redirection below, 'window.location.href = `success.html?email=${encodeURIComponent(email)}`;',  so you don't leave the current page.
             */
             window.location.href = `success.html?email=${encodeURIComponent(email)}`;
 
             // Clear the email input field after redirection
             document.getElementById('email').value = '';
 
-            // Uncomment the line below to log the API response for debugging purposes
+            // Uncomment the line below to log the API response for debugging purposes, and if you want to see what information that the API collects from email, but make sure that the webpage doesn't redirect you to the next page so you can see the API information in the console.log.// 
             // console.log(data);
         } else {
             /*
@@ -57,7 +57,7 @@ function handleInvalidEmail() {
     
     // Show the error message by removing the 'hidden' class
     formText.classList.remove('hidden');
-    // Add a class to style the error message (could be a red color or similar)
+    // Add a class to style the error message (it's a red color or similar)
     formText.classList.add('validEmailAddress');
     
     // Add an 'invalid' class to the input for styling (e.g., red border)
