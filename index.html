@@ -43,10 +43,14 @@
             <!-- A button to submit the form and subscribe to the newsletter. -->
         </form>
     </div>    
-    <!--Changing this script so that is will be connected to the 
-    new js = emailapi.js file. Now the webpage will be using the api
-    to check the emails to see if it is legit, spam, or if it is a 
-    fake email.-->
-    <script src="./emailchecker.js"></script> <!-- Links to an external JavaScript file for additional functionality. -->
+    <!--The 'index.js' connects this html file to the js file. without the api, that checks the email. -->
+    <!--This js file, 'index.js', just check to make sure you are using the right format as an email. If it is correct
+    it considers it valid, but the 'emailchecker.js' file checks to see if it is a fake email too.-->
+    <script src="./index.js"></script> 
+    <!--You can uncomment the script below and comment the 'index.js' above if you want to use the zerobounce api to check the email.-->
+    <!--The api checks to see if the email is legit, but it also checks to see if it is a fake one created so that the signup page can make sure to capture emails that are good ones.
+    -->
+    <!--<script src="./emailchecker.js"></script>-->
+    
 </body>
 </html>
