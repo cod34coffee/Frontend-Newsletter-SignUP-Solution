@@ -71,7 +71,7 @@ function handleInvalidEmail() {
 // Function to initiate the email validation process
 function checkEmailNow() {
     // Your API key for the ZeroBounce API
-    const apiKey = 'bab65f2aaaa04384b87a336d759cf52b';
+    const apiKey = 'Your API Key Here';
     // Get the email input element and retrieve the user's entered email
     const input = document.getElementById('email');
     const email = input.value;
